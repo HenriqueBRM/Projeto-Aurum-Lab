@@ -19,6 +19,7 @@ body{
     text-align: center;
     background-color: var(--fundo);
     color: var(--branco);
+    padding: 30px 20px 20px 20px;
 }
 
 .logo{
@@ -133,5 +134,50 @@ input{
     text-align: center;
     margin-top: 20px;
     display: none; /* Esconde o elemento na tela*/
+}
 
+.logo-resp{
+    display: none;
+}
+
+/* RESPONSIVIDADE - MEDIA QUERY */
+
+@media (max-width: 900px){
+    .container-login{
+        grid-template-columns: 1fr;
+    }
+    .painel-esquerdo{
+        margin: 0;
+    }
+    .descricao{
+        font-size: 1.1em;
+        max-width: 55%;
+
+    }
+    .logo{
+        display: none;
+    }
+    .logo-resp{
+        display: inline;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .form-login{
+        width: 80%;
+        gap: 10px;
+    }
+
+    .titulo-login{
+        font-size: 1.5rem;
+    }
+
+    .subtitulo-login{
+        font-size: 0.9rem;
+    }
+    .botao-login{
+        font-size: 0.8rem;
+    }
+   
 }
